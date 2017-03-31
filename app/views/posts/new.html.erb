@@ -8,6 +8,15 @@
     <%= f.text_field :description %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit Post"%>
   </div>
 <% end %>
+
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+    $('form').submit(function(event){
+      event.preventDefault()
+      alert("we r hack3rs")
+    })
+  })
+  </script>
